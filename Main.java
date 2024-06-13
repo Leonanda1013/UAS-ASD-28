@@ -23,6 +23,9 @@ public class Main {
         if (pilih == 1) {
             method.daftarKendaraan(kendaraan);
         } else if (pilih == 2) {
+            System.out.print("Masukkan Nomor TNKB: ");
+            String nomorTNKB = sc28.nextLine();
+            method.findTransaksiByTNKB(transaksi, kendaraan, nomorTNKB);
 
         } else if (pilih == 3) {
 

@@ -24,4 +24,22 @@ public class Method {
 
     }
 
+    public void findTransaksiByTNKB(TransaksiPajak[] transaksi, Kendaraan[] kendaraan, String nomorTNKB) {
+        boolean found = false;
+        for (TransaksiPajak tp : transaksi) {
+            Kendaraan k = tp.getKendaraan();
+            if (k.getNomorTNKB().equalsIgnoreCase(nomorTNKB)) {
+                found = true;
+                System.out.println("Transaksi untuk kendaraan dengan nomor TNKB " + nomorTNKB + ":");
+                System.out.println("Kode Transaksi: " + tp.getKode());
+                System.out.println("Nominal Bayar: " + tp.getNominalBayar());
+                System.out.println("Denda: " + tp.getDenda());
+                System.out.println();
+            }
+        }
+        if (!found) {
+            System.out.println("Kendaraan dengan nomor TNKB " + nomorTNKB + " tidak ditemukan.");
+        }
+
+    }
 }

@@ -13,4 +13,24 @@ public class TransaksiPajak {
         this.bulanBayar = bulanBayar;
         this.kendaraan = kendaraan;
     }
+
+    public int getKode() {
+        return kode;
+    }
+
+    public long getNominalBayar() {
+        return nominalBayar;
+    }
+
+    public long getDenda() {
+        return denda;
+    }
+
+    public int getBulanBayar() {
+        return bulanBayar;
+    }
+
+    public Kendaraan getKendaraan() {
+        return kendaraan;
+    }
 }
