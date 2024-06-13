@@ -7,7 +7,7 @@ public class TransaksiPajak {
     Kendaraan kendaraan;
 
     public TransaksiPajak(int kode, long nominalBayar, long denda, int bulanBayar, Kendaraan kendaraan) {
-        this.kode = counter++;
+        this.kode = kode;
         this.nominalBayar = nominalBayar;
         this.denda = denda;
         this.bulanBayar = bulanBayar;
